@@ -10,7 +10,8 @@ from langchain.chains import LLMChain
 import google.generativeai as genai
 
 # Initialize Gemini
-genai.configure(api_key=os.getenv("AIzaSyA8324YoI8wxnihUqRzbweAwYgVpP73IX0"))
+api_key = st.secrets["general"]["gemini_api_key"]
+genai.configure(api_key=api_key)
 # -------------------------------
 # Load Whisper ASR
 # -------------------------------
@@ -114,3 +115,4 @@ if uploaded_file is not None:
 
 
     #python -m streamlit run app.py
+
