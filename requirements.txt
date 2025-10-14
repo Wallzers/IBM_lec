@@ -1,11 +1,10 @@
 streamlit==1.38.0
 pydub==0.25.1
-torch==2.5.1
+torch==2.5.1       # CPU-only build
+torchaudio==2.5.1
 transformers==4.44.2
 ffmpeg-python==0.2.0
 langchain==0.2.14
 langchain-community==0.2.12
 google-generativeai==0.7.2
 protobuf==4.25.3
-
-
